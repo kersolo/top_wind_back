@@ -6,10 +6,11 @@ import { SailModule } from './sail/sail.module';
 import { MastModule } from './mast/mast.module';
 import { WishboneModule } from './wishbone/wishbone.module';
 import { PrismaModule } from 'prisma/prisma.module';
+import { AuthModule } from './auth/auth.module';
 
 
 @Module({
-  imports: [PrismaModule, UserModule, ProfileModule, BoardModule, SailModule, MastModule, WishboneModule],
+  imports: [PrismaModule, UserModule, ProfileModule, BoardModule, SailModule, MastModule, WishboneModule, AuthModule],
   controllers: [],
   providers: [],
 })
